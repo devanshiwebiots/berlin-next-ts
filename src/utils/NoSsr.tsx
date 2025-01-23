@@ -1,10 +1,11 @@
+"use client";
 import dynamic from "next/dynamic";
 import React, { Fragment, ReactNode } from "react";
 
 interface NoSsrProps {
- children: ReactNode;
+  children: ReactNode;
 }
 
 const NoSsr: React.FC<NoSsrProps> = (props) => <Fragment>{props.children}</Fragment>;
 
-export default dynamic(() => Promise.resolve(NoSsr), {ssr: false});
+export default dynamic(() => Promise.resolve(NoSsr), { ssr: false });

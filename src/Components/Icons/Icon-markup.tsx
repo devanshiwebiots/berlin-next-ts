@@ -1,6 +1,5 @@
 //@ts-nocheck
 import { Class, CopyText, Markup } from "@/Constant";
-import { CopyToClipboard } from "react-copy-to-clipboard";
 import { toast } from "react-toastify";
 import { Button, Container, Input, Row } from "reactstrap";
 
@@ -10,6 +9,11 @@ const IconMarkUp = ({ icons, itag }) => {
 
   const closeIconContainer = () => closeIcon[0].style.display = "none";
   if (itag !== "" && icons !== "") closeIcon[0].style.display = "block";
+
+ const handleCopy = async () => {
+      await navigator.clipboard.writeText(itag.iTag);
+      toast.info("Code Copied to clipboard !", { position: "bottom-right", theme: "colored" });
+    };
 
   return (
     <div className="icon-hover-bottom p-fixed fa-fa-icon-show-div">
@@ -23,7 +27,7 @@ const IconMarkUp = ({ icons, itag }) => {
             <div className="icon-class">
               <label className="icon-title mb-2">{Class}</label>
               <span id="fclass1" className="">
-                {icons.feathericon ? itag.iTag.slice(17, itag.iTag.indexOf('"></i>')) : itag.iTag && itag.iTag.slice(14, itag.iTag.indexOf('"></i>'))}                
+                {icons.feathericon ? itag.iTag.slice(17, itag.iTag.indexOf('"></i>')) : itag.iTag && itag.iTag.slice(14, itag.iTag.indexOf('"></i>'))}
               </span>
             </div>
             <div className="icon-last icon-last">
@@ -31,11 +35,9 @@ const IconMarkUp = ({ icons, itag }) => {
               <div className="form-inline">
                 <div className="form-group m-0">
                   <Input className="inp-val m-r-10" id="input_copy" type="text" defaultValue={itag.iTag} />
-                  <CopyToClipboard text={itag.iTag}>
-                    <Button color="primary" className="notification" onClick={() => toast.info("Code Copied to clipboard !", {theme: "colored" })}>
+                    <Button color="primary" className="notification"  onClick={handleCopy}>
                       {CopyText}
                     </Button>
-                  </CopyToClipboard>
                 </div>
               </div>
             </div>

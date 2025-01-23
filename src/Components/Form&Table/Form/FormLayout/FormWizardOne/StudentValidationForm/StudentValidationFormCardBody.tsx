@@ -7,7 +7,7 @@ const StudentValidationFormCardBody = () => {
   const { studentValidationForm, studentLevel } = useAppSelector((state) => state.studentWizard);
   const dispatch = useAppDispatch();
   const [imageUrl, setImageUrl] = useState<string | null>(null);
-  const fileInputRef = useRef<HTMLInputElement>(null);
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   const handleImageLabelClick = () => {
     if (fileInputRef.current) fileInputRef.current.click();
@@ -31,7 +31,7 @@ const StudentValidationFormCardBody = () => {
   };
   return (
     <>
-      <StudentForm handleImageLabelClick={handleImageLabelClick} imageUrl={imageUrl} fileInputRef={fileInputRef} getUserData={getUserData} studentValidationForm={studentValidationForm} level={studentLevel} />
+      <StudentForm handleImageLabelClick={handleImageLabelClick} imageUrl={imageUrl} fileInputRef={fileInputRef as any} getUserData={getUserData} studentValidationForm={studentValidationForm} level={studentLevel} />
     </>
   );
 };

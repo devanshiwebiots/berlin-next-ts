@@ -1,13 +1,28 @@
 import CommonCardHeader from "@/CommonComponent/CommonCardHeader";
 import { ClipboardTextInput, Copy, Cut, Cutandcopytext, CutandcopytextPlaceholder } from "@/Constant";
-import { notify } from "@/Data/Form&Table/Form";
 import { useState } from "react";
-import CopyToClipboard from "react-copy-to-clipboard";
+import { toast } from "react-toastify";
 import { Button, Card, CardBody, Col, Input } from "reactstrap";
 
 const ClipboardOnTextInput = () => {
   const [clipboardTextValue, setClipboardTextValue] = useState({ value: "", copied: false });
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(clipboardTextValue.value);
+      setClipboardTextValue({ value: clipboardTextValue.value, copied: true });
+    } catch (err) {
+      toast.error("Failed to copy text: " + err);
+    }
+  };
 
+  const handleCut = async () => {
+    try {
+      await navigator.clipboard.writeText(clipboardTextValue.value);
+      setClipboardTextValue({ value: "", copied: false });
+    } catch (err) {
+      toast.error("Failed to cut text: " + err);
+    }
+  };
   return (
     <Col sm="12" md="6">
       <Card>
@@ -17,12 +32,12 @@ const ClipboardOnTextInput = () => {
             <p className="card-description">{Cutandcopytext}</p>
             <Input id="clipboardExample1" type="text" placeholder={CutandcopytextPlaceholder} value={clipboardTextValue.value} onChange={({ target: { value } }) => setClipboardTextValue({ value, copied: false })} />
             <div className="mt-3 text-end">
-              <CopyToClipboard text={clipboardTextValue.value} onCopy={(value) => setClipboardTextValue({ value, copied: true })}>
-                <Button color="primary" className="btn-clipboard me-1" onClick={notify}><i className="fa fa-copy"></i> {Copy}</Button>
-              </CopyToClipboard>
-              <CopyToClipboard text={clipboardTextValue.value} onCopy={() => setClipboardTextValue({ copied: true, value: "" })}>
-                <Button color="secondary" className="btn-clipboard-cut"><i className="fa fa-cut"></i> {Cut}</Button>
-              </CopyToClipboard>
+              <Button color="primary" className="btn-clipboard me-1" onClick={handleCopy}>
+                <i className="fa fa-copy"></i> {Copy}
+              </Button>
+              <Button color="secondary" className="btn-clipboard-cut" onClick={handleCut}>
+                <i className="fa fa-cut"></i> {Cut}
+              </Button>
             </div>
           </div>
         </CardBody>

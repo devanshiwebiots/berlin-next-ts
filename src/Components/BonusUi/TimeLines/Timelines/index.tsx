@@ -1,7 +1,6 @@
 import CommonCardHeader from "@/CommonComponent/CommonCardHeader";
 import { TimelineTitle } from "@/Constant";
 import { TimeLineData } from "@/Data/BonusUi/Timeline";
-import { VerticalTimeline } from "react-vertical-timeline-component";
 import { Card, CardBody, Col } from "reactstrap";
 import AppIdeasTimeline from "./AppIdeasTimeline";
 import BlogTimeline from "./BlogTimeline";
@@ -16,14 +15,14 @@ const Timelines = () => {
       <Card>
         <CommonCardHeader title={TimelineTitle} span={TimeLineData} />
         <CardBody className="rounded-timeline">
-          <VerticalTimeline animate={true}>
-            <AppIdeasTimeline/>
-            <BlogTimeline/>
-            <CarouselTimeline/>
-            <AutoTestingTimeline/>
-            <MeetUpTimeline/>
-            <ResolutionTimeline/>
-          </VerticalTimeline>
+          <div className="timeline">
+            <AppIdeasTimeline />
+            <BlogTimeline />
+            <CarouselTimeline />
+            <AutoTestingTimeline />
+            <MeetUpTimeline />
+            <ResolutionTimeline />
+          </div>
         </CardBody>
       </Card>
     </Col>

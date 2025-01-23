@@ -1,3 +1,4 @@
+//@ts-nocheck
 import React from "react";
 import Countdown from "react-countdown";
 import { Button, Card, CardBody, Col, Row } from "reactstrap";

@@ -1,8 +1,8 @@
 import DashboardCommonHeader from "@/CommonComponent/CommonDropdown/DashboardCommonHeader";
 import { Href, OrdersbyCountriesTitle } from "@/Constant";
 import { OrdersByCountriesData } from "@/Data/General/Dashboard/EcommerceData";
-import FeatherIcon from "feather-icons-react";
 import Link from "next/link";
+import { ChevronDown, ChevronUp } from "react-feather";
 import { Card, CardBody, Col, Table } from "reactstrap";
 
 const OrderByCountry = () => {
@@ -32,7 +32,7 @@ const OrderByCountry = () => {
                     <td>
                       <span className={item.percentageClass}>
                         {item.percentage}
-                        <FeatherIcon icon={item.percentageIcon} />
+                        {item.percentageIcon === "chevron-up" ? <ChevronUp/>: <ChevronDown/>}
                       </span>
                     </td>
                     <td>{item.date}</td>

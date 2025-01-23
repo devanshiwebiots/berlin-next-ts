@@ -424,7 +424,6 @@ export const MonthlyHistoryChart: ApexOptions = {
     bar: {
       horizontal: false,
       columnWidth: "30%",
-      // endingShape: "rounded",
     },
   },
   dataLabels: {
@@ -1330,7 +1329,6 @@ export const optionsLine: ApexOptions = {
     stacked: true,
     animations: {
       enabled: true,
-      easing: "linear",
       dynamicAnimation: {
         speed: 1000,
       },

@@ -7,19 +7,22 @@ import CreatedByMe from "./CreatedByMe";
 import Link from "next/link";
 
 const ListOfTask = () => {
-  const componentRef = useRef<HTMLDivElement | null>(null);
+   const contentRef = useRef<HTMLDivElement | null>(null);
 
-  const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
-  });
+   const handlePrint = useReactToPrint({
+     contentRef,
+   });
 
   return (
     <Card className="mb-0">
       <CardHeader className="d-flex pb-0">
         <h4 className="mb-0">{Documentation}</h4>
-        <Link href={Href} onClick={handlePrint}><Printer className="me-2"/>{Print}</Link>
+        <Link href={Href} onClick={()=>handlePrint()}>
+          <Printer className="me-2" />
+          {Print}
+        </Link>
       </CardHeader>
-      <CreatedByMe ref={componentRef}/>
+      <CreatedByMe ref={contentRef} />
     </Card>
   );
 };

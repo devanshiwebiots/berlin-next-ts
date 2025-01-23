@@ -381,7 +381,6 @@ export const DeafultSalesData: ApexOptions = {
     hover: {
       filter: {
         type: "darken",
-        value: 1,
       },
     },
   },
@@ -391,31 +390,6 @@ export const DeafultSalesData: ApexOptions = {
       columnWidth: "20%",
     },
   },
-  //   responsive: [
-  //     {
-  //       breakpoint: 1199.98,
-  //       options: {
-  //         chart: {
-  //           height: 320
-  //         },
-  //       }
-  //     },
-  //     {
-  //     breakpoint: 420,
-  //     options: {
-  //       series: [{
-  //         data: [50, 40, 20, 30, 35, 60, 30, 35, 65]
-  //         },
-  //         {
-  //           data: [25, 20, 30, 10, 15, 10, 15, 13, 12],
-  //         },
-  //       ],
-  //       xaxis: {
-  //         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
-  //       }
-  //     }
-  //   }
-  // ],
   dataLabels: {
     enabled: false,
   },
