@@ -128,7 +128,6 @@ export function radialCommonOption(data: { radialYseries: any; dropshadowColor: 
           margin: 5,
         },
         dataLabels: {
-          // showOn: "always",
           value: {
             color: "var(--body-font-color)",
             fontSize: "14px",

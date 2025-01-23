@@ -1655,7 +1655,6 @@ export const Visitorfulldata:ApexOptions = {
     min: 0,
     max: 100,
     tickAmount: 5,
-    // tickPlacement: "between",
     labels: {
       style: {
         fontFamily: "Rubik, sans-serif",
@@ -1674,11 +1673,6 @@ export const Visitorfulldata:ApexOptions = {
     labels: {
       colors: "var(--chart-text-color)",
     },
-    // markers: {
-    //   width: 7,
-    //   height: 7,
-    //   radius: 12,
-    // },
     itemMargin: {
       horizontal: 20,
     },

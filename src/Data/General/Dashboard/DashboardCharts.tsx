@@ -316,24 +316,6 @@ export const options_revenue_order:ApexOptions = {
     shared: false,
     intersect: false,
   },
-  // responsive: [
-  //   {
-  //     breakpoint: 1400,
-  //     options: {
-  //       chart: {
-  //         height: 174,
-  //       },
-  //     },
-  //   },
-  //   {
-  //     breakpoint: 781,
-  //     options: {
-  //       chart: {
-  //         height: 235,
-  //       },
-  //     },
-  //   },
-  // ],
 };
 
 export const Goaloptions:ApexOptions = {
@@ -369,24 +351,6 @@ plotOptions: {
     }
   }
 },
-// responsive: [
-//   {
-//     breakpoint: 1551,
-//     options: {
-//       chart: {
-//         height: 460,
-//       },
-//     },
-//   },
-//   {
-//     breakpoint: 768,
-//     options: {
-//       chart: {
-//         width: 300,
-//       },
-//     },
-//   },
-// ],
 colors: ["#2A5699"],
 stroke: {
   lineCap: 'round'

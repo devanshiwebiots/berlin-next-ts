@@ -262,23 +262,6 @@ export var revenueGrowthOptions: ApexOptions = {
       return '<div class="apex-tooltip p-2">' + "<span>" + '<span class="bg-primary">' + "</span>" + "Marketing Sale" + "<h3>" + "$" + series[seriesIndex][dataPointIndex] + "<h3/>" + "</span>" + "</div>";
     },
   },
-  // responsive: [
-  //   {
-  //     breakpoint: 420,
-  //     options: {
-  //       series: [
-  //         {
-  //           name: "Online Sale",
-  //           data: [100, 155, 175, 160, 200, 200, 250],
-  //         },
-  //         {
-  //           name: "Marketing Sale",
-  //           data: [45, 75, 85, 45, 145, 90, 45],
-  //         },
-  //       ],
-  //     },
-  //   },
-  // ],
 };
 
 export const growthData = [
