@@ -26,6 +26,37 @@
         color: rgba(43, 43, 43, 0.7);
     }
 }
+.right-sidebar-chat {
+    .msger-inputarea {
+        position: relative;
+        .epr-header {
+            padding: 0px;
+            div {
+                padding: 0px;
+                .epr-search-container {
+                    padding: 0px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .epr-body {
+            .epr-emoji-category-content {
+                margin: 0px;
+            }
+        }
+        input {
+            width: 100%;
+            &:focus {
+                border: none !important;
+            }
+        }
+        .EmojiPickerReact{
+            right: 0;
+            bottom: 52px; 
+            position: absolute; 
+        }
+    }
+}
 .dropdown-menu.show {
     background-color: $white;
     z-index: 2;
@@ -231,6 +262,22 @@ span.twitter-typeahead {
             }
         }
     }
+}
+.swiper-button-prev {
+    width: calc(23px + (32 - 23) * ((100vw - 320px) / (1920 - 320)));
+    height: calc(23px + (32 - 23) * ((100vw - 320px) / (1920 - 320)));
+	&:after {
+        color: $white;
+        font-size: 12px !important;
+	}
+}
+.swiper-button-next {
+    width: calc(23px + (32 - 23) * ((100vw - 320px) / (1920 - 320)));
+    height: calc(23px + (32 - 23) * ((100vw - 320px) / (1920 - 320)));
+	&:after {
+        color: $white;
+        font-size: 12px !important;
+	}
 }
 .nav-tabs {
     .nav-item {
@@ -1043,7 +1090,7 @@ div.dt-button-collection {
     padding: 0;
     position: absolute;
     right: 4%;
-    bottom: 10%;
+    bottom: 25%; 
 }
 .tap-top {
     text-align: center;

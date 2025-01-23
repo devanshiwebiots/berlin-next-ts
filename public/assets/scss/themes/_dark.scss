@@ -98,6 +98,63 @@ body {
 		.animated-timeline {
 			color: $dark-all-font-color;
 		}
+		.right-sidebar-chat {
+			.msger-inputarea {
+				.EmojiPickerReact {
+					background-color: $dark-body-background !important;
+					border-color: $dark-card-border !important;
+				}	
+			}
+		}
+		.epr-emoji-category {
+			color: $white;
+			background-color: $dark-body-background !important;
+		}
+		.epr-main {
+			.epr-body {
+				.epr-emoji-list {
+					.epr-emoji-category {
+						h2 {
+							color: $white;
+							background-color: $dark-body-background !important;
+							border-color: $dark-card-border !important;
+						}
+					}
+				}
+			}
+		}
+		.epr-main {
+			.epr-header {
+				.epr-search-container {
+					input {
+						background-color: $dark-body-background !important;
+						border-color: $dark-card-border !important;
+						&:focus {
+							border-color: $dark-card-border !important; 
+						}
+					}
+				}
+			}
+		}
+		.msger-inputarea {
+			.epr-search-container {
+				input {
+					background-color: $dark-body-background !important;
+					color: $white !important;
+				}
+			}
+		}
+		.rmdp-ep-arrow {
+			border-color: $dark-card-border !important;
+		}
+		.rmdp-header-values {
+			color: $white; 
+		} 
+		.rmdp-day {
+			span {
+				color: $white;
+			}
+		}
 		.rounded-timeline {
 			.timeline {
 				&::after {
