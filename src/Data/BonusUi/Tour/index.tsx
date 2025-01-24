@@ -73,11 +73,11 @@ export const CommonFooterData = [
 export const TourSteps = [
   {
     target: ".step1",
-    content: "This is Moscow profile",
+    content: "This is Berlin profile",
   },
   {
     target: ".step2",
-    content: "Change Moscow profile image here",
+    content: "Change Berlin profile image here",
   },
   {
     target: ".step3",
