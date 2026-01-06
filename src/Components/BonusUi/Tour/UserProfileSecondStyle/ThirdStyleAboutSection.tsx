@@ -13,14 +13,14 @@ export const ThirdStyleAboutSection = () => {
         <Col sm="6" className="step6">
           <Link href={Href}>
             <div className="tour-blog">
-              <Image width={758} height={350} className="img-fluid rounded" src={`${ImagePath}/other-images/mountain.jpg`} alt="mountain" />
+              <Image width={758} height={350} className="img-fluid rounded" src={`${ImagePath}/other-images/mountain.jpg`} alt="mountain" unoptimized/>
             </div>
           </Link>
         </Col>
         <Col sm="6">
           <Link href={Href}>
             <div className="tour-blog">
-              <Image width={758} height={350} className="img-fluid rounded" src={`${ImagePath}/other-images/sea.jpg`} alt="sea" />
+              <Image width={758} height={350} className="img-fluid rounded" src={`${ImagePath}/other-images/sea.jpg`} alt="sea" unoptimized/>
             </div>
           </Link>
         </Col>

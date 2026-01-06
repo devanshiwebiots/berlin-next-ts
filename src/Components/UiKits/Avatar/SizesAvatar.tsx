@@ -12,11 +12,11 @@ export const SizesAvatar = () => {
         <CardBody className='avatar-showcase'>
           <div className='avatars'>
             <div className='avatar'>
-              <Image height={100} width={100} className='img-100 rounded-circle' src={`${ImagePath}/avtar/3.jpg`} alt='image' />
+              <Image height={100} width={100} className='img-100 rounded-circle' src={`${ImagePath}/avtar/3.jpg`} alt='image' unoptimized/>
             </div>
             {SizeImages.map((item, index) => (
               <div className='avatar' key={index}>
-                <Image height={item.height} width={item.width} className={`${item.className} rounded-circle`} src={`${ImagePath}${item.src}`} alt='image' />
+                <Image height={item.height} width={item.width} className={`${item.className} rounded-circle`} src={`${ImagePath}${item.src}`} alt='image' unoptimized/>
               </div>
             ))}
           </div>

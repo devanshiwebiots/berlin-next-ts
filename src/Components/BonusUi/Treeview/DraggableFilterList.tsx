@@ -30,19 +30,19 @@ const DraggableFilterList = () => {
         <CardBody className="draggable-filter">
           <ul className="list-group" id="draggable-filter" ref={listRef}>
             <li className="list-group-item">
-              <Image height={37} width={37} className="rounded-circle" src={`${ImagePath}/user/1.jpg`} alt="user" />
+              <Image height={37} width={37} className="rounded-circle" src={`${ImagePath}/user/1.jpg`} alt="user" unoptimized/>
               Teresa J. Mosteller
             </li>
             <li className="list-group-item">
-              <Image height={37} width={37} src={`${ImagePath}/user/3.png`} alt="user" />
+              <Image height={37} width={37} src={`${ImagePath}/user/3.png`} alt="user" unoptimized/>
               Gloria D. Acheson
             </li>
             <li className="list-group-item filtered list-light-primary">
-              <Image height={37} width={37} src={`${ImagePath}/user/2.jpg`} alt="user" />
+              <Image height={37} width={37} src={`${ImagePath}/user/2.jpg`} alt="user" unoptimized/>
               Sharon C. Obrien
             </li>
             <li className="list-group-item">
-              <Image height={37} width={37} src={`${ImagePath}/user/5.jpg`} alt="user" />
+              <Image height={37} width={37} src={`${ImagePath}/user/5.jpg`} alt="user" unoptimized/>
               Bryan A. Owens
             </li>
           </ul>

@@ -21,13 +21,13 @@ export const ArrowTabContent: React.FC<TabContentProp> = ({ basicTab }) => {
       <TabPane tabId='2'>
         <Row className='g-3 pt-3'>
           <Col xs={4}>
-            <Image height={245} width={236} className='img-fluid' src={`${ImagePath}/switch/c1.jpg`} alt='chairs' />
+            <Image height={245} width={236} className='img-fluid' src={`${ImagePath}/switch/c1.jpg`} alt='chairs' unoptimized/>
           </Col>
           <Col xs={4}>
-            <Image height={245} width={236} className='img-fluid' src={`${ImagePath}/switch/c2.jpg`} alt='chairs' />
+            <Image height={245} width={236} className='img-fluid' src={`${ImagePath}/switch/c2.jpg`} alt='chairs' unoptimized/>
           </Col>
           <Col xs={4}>
-            <Image height={245} width={236} className='img-fluid' src={`${ImagePath}/switch/c3.jpg`} alt='chairs' />
+            <Image height={245} width={236} className='img-fluid' src={`${ImagePath}/switch/c3.jpg`} alt='chairs' unoptimized/>
           </Col>
         </Row>
       </TabPane>

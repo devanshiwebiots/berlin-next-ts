@@ -17,7 +17,7 @@ const EffectCoverflowSlider = () => {
           <Swiper  effect={"coverflow"} loop={true} grabCursor={true} centeredSlides={true} slidesPerView={"auto"} coverflowEffect={{ rotate: 50, stretch: 0, depth: 100, modifier: 1, slideShadows: true }} pagination={true} modules={[EffectCoverflow, Pagination]} className="mySwiper coverflow-slider">
             {DynamicNumber(10).map((item, index) => (
               <SwiperSlide key={index}>
-                <Image height={199} width={300} src={`${ImagePath}/slider/${item+1}.jpg`} className="d-block w-100" alt="Vertical_Slider" />
+                <Image height={199} width={300} src={`${ImagePath}/slider/${item+1}.jpg`} className="d-block w-100" alt="Vertical_Slider"  unoptimized/>
               </SwiperSlide>
             ))}
           </Swiper>

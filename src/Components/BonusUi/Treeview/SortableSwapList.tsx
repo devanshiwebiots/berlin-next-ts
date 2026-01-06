@@ -38,7 +38,7 @@ const SortableSwapList: React.FC<NestedSortableListProps> = ({ items }) => {
       {items.map((item) => (
         <ListGroupItem key={item.id} className='nested-1 sortable-item'>
           <div className='sortable-handle'>
-            <Image height={200} width={200} src={`${ImagePath}/${item.image}`} alt='' /> {item.content}
+            <Image height={200} width={200} src={`${ImagePath}/${item.image}`} alt='' unoptimized/> {item.content}
           </div>
           {item.children && renderItems(item.children)}
         </ListGroupItem>

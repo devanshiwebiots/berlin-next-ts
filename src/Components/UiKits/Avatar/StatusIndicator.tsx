@@ -12,12 +12,12 @@ const StatusIndicatorAvatar = () => {
         <CardBody className="avatar-showcase">
           <div className="avatars">
             <div className="avatar">
-              <Image height={100} width={100} className="img-100 rounded-circle" src={`${ImagePath}/user/1.jpg`} alt="image" />
+              <Image height={100} width={100} className="img-100 rounded-circle" src={`${ImagePath}/user/1.jpg`} alt="image" unoptimized/>
               <div className="status bg-success"></div>
             </div>
             {StatusIndicators.map(({ className, src ,color,height,width}, index) => (
               <div className="avatar" key={index}>
-                <Image height={height} width={width} className={`${className} rounded-circle`} src={`${ImagePath}${src}`} alt="image" />
+                <Image height={height} width={width} className={`${className} rounded-circle`} src={`${ImagePath}${src}`} alt="image" unoptimized/>
                 <div className={`status bg-${color}`}></div>
               </div>
             ))}

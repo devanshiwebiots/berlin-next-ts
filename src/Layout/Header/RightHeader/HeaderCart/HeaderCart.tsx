@@ -30,7 +30,7 @@ const HeaderCart = () => {
                 <Fragment key={index}>
                   <li>
                     <div className='d-flex'>
-                      <Image width={50} height={55} className='img-fluid b-r-5 img-50' src={`${ImagePath}/ecommerce/${data.image}`} alt={Href} priority />
+                      <Image width={50} height={55} className='img-fluid b-r-5 img-50' src={`${ImagePath}/ecommerce/${data.image}`} alt={Href} priority unoptimized/>
                       <div className='flex-grow-1'>
                         <Link href='/app/ecommerce/product'>
                           <span>{data.name}</span>
@@ -66,7 +66,7 @@ const HeaderCart = () => {
             </Fragment>
           ) : (
             <Col sm={12} className='empty-cart-cls text-center'>
-              <Image height={172} width={172} src={`${ImagePath}/ecommerce/icon-empty-cart.png`} className='img-fluid mb-4 mt-4' alt='Empty Cart' />
+              <Image height={172} width={172} src={`${ImagePath}/ecommerce/icon-empty-cart.png`} className='img-fluid mb-4 mt-4' alt='Empty Cart' unoptimized/>
               <h3>
                 <strong>Your Cart is Empty</strong>
               </h3>

@@ -14,7 +14,7 @@ const ImageBadges = () => {
           <div className="badge-spacing image-badges">
             {ImageBadgesData.map((item, index) => (
               <Badge pill color="" className={`"common-align txt-${item.color === "light" ? "dark" : item.color} badge-l-${item.color} border border-${item.color}`} key={index}>
-                <Image className="rounded-circle me-1" src={`${ImagePath}/dashboard/${item.image}`} alt="user" height={24} width={24}/>
+                <Image className="rounded-circle me-1" src={`${ImagePath}/dashboard/${item.image}`} alt="user" height={24} width={24} unoptimized/>
                 {item.color}
               </Badge>
             ))}

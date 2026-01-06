@@ -16,7 +16,7 @@ const AutoPlayVariant = () => {
           <Swiper spaceBetween={30} centeredSlides={true} autoplay={{delay: 2500,disableOnInteraction: false}} pagination={{clickable: true}} navigation={true} modules={[Autoplay, Pagination, Navigation]} className="mySwiper swiper-h">
             {AutoPlayVariantData.map((item, index) => (
               <SwiperSlide key={index}>
-                <Image height={665} width={1000} src={`${ImagePath}/slider/${item}.jpg`} className="d-block w-100" alt="Vertical_Slider" />
+                <Image height={665} width={1000} src={`${ImagePath}/slider/${item}.jpg`} className="d-block w-100" alt="Vertical_Slider" unoptimized/>
               </SwiperSlide>
             ))}
           </Swiper>

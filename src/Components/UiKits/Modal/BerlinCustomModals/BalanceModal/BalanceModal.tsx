@@ -15,7 +15,7 @@ export const BalanceModal:React.FC<BalanceModalType> = ({ modalThird, modalThird
           <CardBody>
             <div className="balance-profile">
               <div className="balance-img">
-                <Image height={68} width={68} className="image-fluid" src={`${ImagePath}/product-lists/user.png`} alt="user vector" />
+                <Image height={68} width={68} className="image-fluid" src={`${ImagePath}/product-lists/user.png`} alt="user vector" unoptimized/>
                 <Link className="edit-icon" href={`/users/user_profile`}><SVG iconId="pencil" /></Link>
               </div>
               <span className="f-light d-block">Your Balance</span>

@@ -13,7 +13,7 @@ const LogoWrapper = () => {
     <>
       <div className="logo-wrapper">
         <Link href={`/dashboard/default`}>
-          <Image className="img-fluid" src={`${ImagePath}/logo/logo.png`} width={100} height={34} alt="" />
+          <Image className="img-fluid" src={`${ImagePath}/logo/logo.png`} width={100} height={34} alt="" unoptimized/>
         </Link>
         <div className="toggle-sidebar" onClick={() => dispatch(setToggleSidebar(!toggleSidebar))}>
           <SVG className='sidebar-toggle' iconId='toggle-icon' />
@@ -21,7 +21,7 @@ const LogoWrapper = () => {
       </div>
       <div className="logo-icon-wrapper">
         <Link href={`/dashboard/default`}>
-          <Image className="img-fluid" src={`${ImagePath}/logo/logo-icon.png`} width={32} height={32} alt="" />
+          <Image className="img-fluid" src={`${ImagePath}/logo/logo-icon.png`} width={32} height={32} alt="" unoptimized/>
         </Link>
       </div>
     </>

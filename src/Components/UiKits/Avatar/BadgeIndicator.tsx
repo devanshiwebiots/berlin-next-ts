@@ -13,7 +13,7 @@ const BadgeIndicator = () => {
           <div className='avatars badge-avatar'>
             {BadgeIndicatorData.map((item, index) => (
               <div className='avatar' key={index}>
-                <Image height={item.height} width={item.width} className={`${item.imageClass} rounded-circle`} src={`${ImagePath}/${item.image}`} alt='#' />
+                <Image height={item.height} width={item.width} className={`${item.imageClass} rounded-circle`} src={`${ImagePath}/${item.image}`} alt='#' unoptimized/>
                 <Badge color={item.color} className={`position-absolute rounded-circle ${item.class}`}>
                   {item.text}
                 </Badge>

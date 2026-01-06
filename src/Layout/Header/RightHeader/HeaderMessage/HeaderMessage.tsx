@@ -19,7 +19,7 @@ const HeaderMessage = () => {
                         <li key={item.id}>
                             <div className="d-flex align-items-start">
                                 <div className="message-img">
-                                    <Image width={40} height={40} src={`${ImagePath}/user/${item.image}`} alt="" />
+                                    <Image width={40} height={40} src={`${ImagePath}/user/${item.image}`} alt="" unoptimized/>
                                 </div>
                                 <div className="flex-grow-1">
                                     <h5 className="mb-1">

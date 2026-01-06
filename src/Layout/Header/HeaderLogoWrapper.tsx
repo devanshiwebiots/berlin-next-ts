@@ -15,8 +15,8 @@ const HeaderLogoWrapper = () => {
         <Col xs='auto' className="header-logo-wrapper p-0">
             <div className="logo-wrapper">
                 <Link href={`/dashboard/default`}>
-                    <Image className="img-fluid for-light" src={`${ImagePath}/logo/logo-1.png`} alt="" width={100} height={34} />
-                    <Image className="img-fluid for-dark" src={`${ImagePath}/logo/logo.png`} alt="" width={100} height={34} />
+                    <Image className="img-fluid for-light" src={`${ImagePath}/logo/logo-1.png`} alt="" width={100} height={34} unoptimized/>
+                    <Image className="img-fluid for-dark" src={`${ImagePath}/logo/logo.png`} alt="" width={100} height={34} unoptimized/>
                 </Link>
             </div>
             <div className="toggle-sidebar" onClick={() => dispatch(setToggleSidebar(!toggleSidebar))}>

@@ -11,7 +11,7 @@ const ProfileGreeting = () => {
       <Card className='profile-greeting'>
         <CardBody>
           <div>
-            <Image width={231} height={192} className='greeting-img' src={`${ImagePath}/dashboard/welcome.png`} alt='welcome' />
+            <Image width={231} height={192} className='greeting-img' src={`${ImagePath}/dashboard/welcome.png`} alt='welcome' unoptimized/>
             <h1>{WelcomeBack}</h1>
             <p>{"Get to work on the project you were given."}</p>
             <Link className='btn btn-primary' href='/app/project/project_list'>

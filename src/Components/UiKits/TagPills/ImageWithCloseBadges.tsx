@@ -14,7 +14,7 @@ const ImageWithCloseBadges = () => {
           <div className="badge-spacing image-badges">
             {ImageBadgesData.map((item, index) => (
               <Badge pill color="" className={`"common-align txt-${item.color === "light" ? "dark" : item.color} badge-l-${item.color} border border-${item.color}`} key={index}>
-                <Image height={24} width={24} className="rounded-circle me-1" src={`${ImagePath}/dashboard/${item.image}`} alt="user" />
+                <Image height={24} width={24} className="rounded-circle me-1" src={`${ImagePath}/dashboard/${item.image}`} alt="user" unoptimized/>
                 {item.color}<span className="vr mx-2"></span>
                 <XCircle className={`ms-1 stroke-${item.color === "light" ? "dark" : item.color}`} />
               </Badge>

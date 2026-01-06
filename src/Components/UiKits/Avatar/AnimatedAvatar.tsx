@@ -13,7 +13,7 @@ const AnimatedAvatar = () => {
           <div className='avatars'>
             {AnimatedAvatarData.map((item, index) => (
               <div className='avatar' key={index}>
-                <Image height={item.height} width={item.width} className={`${item.imageClass} rounded-circle`} src={`${ImagePath}/${item.image}`} alt='#' />
+                <Image height={item.height} width={item.width} className={`${item.imageClass} rounded-circle`} src={`${ImagePath}/${item.image}`} alt='#' unoptimized/>
                 <div className={`status animation-ping bg-${item.color}`}></div>
               </div>
             ))}

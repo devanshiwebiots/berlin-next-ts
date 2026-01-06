@@ -9,7 +9,7 @@ export const PlacementToastContent:React.FC<PlacementToastContentProp> = ({ data
       <div className={`toast-container p-3 position-absolute ${data}`}>
         <Toast fade>
           <div className="toast-header toast-img">
-            <Image height={100} width={100} className="rounded me-2" src={`${ImagePath}/product-lists/profile.png`} alt="profile" />
+            <Image height={100} width={100} className="rounded me-2" src={`${ImagePath}/product-lists/profile.png`} alt="profile" unoptimized/>
             <strong className="me-auto">{BerlinTheme}</strong>
             <small className="d-sm-block d-none">25 min ago</small>
           </div>
